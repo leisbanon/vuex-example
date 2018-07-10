@@ -1,0 +1,64 @@
+/* 文字按钮 */
+.x-btn{
+    display: block;
+    color: rgba(64,158,255,1);
+    text-decoration: underline;
+    cursor: pointer;
+    margin-top: 35px;
+    width: fit-content;
+}
+.x-btn:nth-child(1) {
+    margin: 0;
+}
+.x-btn:hover{
+    color: rgba(64,158,255,0.9);
+}
+.x-btn:active{
+    color: #CCC;
+}
+
+/* 主体标题 */
+.title-tip {
+    margin-top: 30px;
+    height: 35px;
+    line-height: 35px;
+    background: #409eff;
+    color: white;
+    padding-left: 20px;
+    text-indent: 0;
+}
+
+.x-font-container{
+    text-indent: 2em;
+    font-family: cursive;
+    font-size: 18px;
+    font-style: normal;
+    line-height: 23px;
+    background: #fafbfc;
+    padding: 15px;
+    box-shadow: 2px 2px 7px #CCC;
+}
+
+/* 代码标记 */
+pre{
+    background: rgb(40, 44, 52);
+    color: white;
+    white-space:pre-line;
+    padding: 15px;
+    line-height: 22px;
+    border-radius: 6px;
+    font-size: 14px;
+    overflow: auto;
+}
+pre code{
+    white-space:pre;
+}
+
+/* size */
+.margin-t-0{
+    margin-top: 0;
+}
+
+main{
+    padding: 20px;
+}
