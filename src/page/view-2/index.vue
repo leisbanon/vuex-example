@@ -40,8 +40,7 @@
         </div>
         <!-- actions -->
         <div>
-            <p><span class="color-red">3、actions</span></p>
-            <pre></pre>
+            <p><span class="color-red">3、actions</span>--响应由于state 状态的变化，view 的视图更新。</p>
         </div>
     </main>
 </template>

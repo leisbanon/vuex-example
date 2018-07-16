@@ -1,4 +1,5 @@
 > ## 这是一个Vuex 实例帮助教程
+![avatar](/src/assets/vuex.png)
 
 
 ## 项目安装与开发
