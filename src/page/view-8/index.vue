@@ -55,7 +55,7 @@
                         this.$rotuer.store.state.module_admin
                     </code>
                 </pre>
-                <p class="x-btn" @click="user">获取Store Module State : this.$route.state.module_user.user_name</p>
+                <p class="x-btn" @click="user">获取Store Module State : this.$store.state.module_user.user_name</p>
             </div>
         </div>
 
@@ -63,9 +63,11 @@
             <p class="title-tip">Module 全局命名空间</p>
             <div class="x-font-container">需要注意的是，一旦Store 中注册了Modules,其Action、Mutation、Getter 同样是全局的命名空间，这样使得多个模块能够对同一Mutation、Action 响应：
                 <hr/>
-                <div>this.$route.getters.getUserName;</div>
-                <div>this.$route.commit('commit_fun');</div>
-                <div>this.$route.dispatch('dispatch_fun');</div>
+                <div>this.$store.getters.getUserName;</div>
+                <div>this.$store.commit('commit_fun');</div>
+                <div>this.$store.dispatch('dispatch_fun');</div>
+
+                <p class="x-btn" @click="getters">this.$store.getters.getUserName</p>
             </div>
         </div>
 
@@ -116,6 +118,10 @@ export default {
             let self = this;
             let user = self.$store.state.module_user.user_name;
             alert(user);
+        },
+        getters() {
+            let name = this.$store.getters.getUserName;
+            alert(name);
         }
     }
 }

@@ -52,9 +52,6 @@ export default {
         }
     },
     created() {
-        this.$store.commit('addCount');
-        let count = this.$store.state.count;
-        console.log(count);
     },
     methods:{
 
