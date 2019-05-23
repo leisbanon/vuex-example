@@ -8,6 +8,7 @@ Vue.use(Router);
 
 //实例化vue-router实例
 const vueRouter = new Router({
+  base:'/vuex/',
   mode:'history',
   routes
 });
